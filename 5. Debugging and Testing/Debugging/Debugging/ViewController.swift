@@ -18,9 +18,10 @@ class ViewController: NSViewController {
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
-        if let num = Int(textField.stringValue) {
-            resultLabel.stringValue = "Square is \(getSquare(num: num))"
-            print(num)
+        let num = Int(textField.stringValue)
+        if num != nil {
+            resultLabel.stringValue = "Square is \(getSquare(num: num!))"
+            print(num ?? 0)
         } else {
             resultLabel.stringValue = "Please enter a numeric value"
         }
