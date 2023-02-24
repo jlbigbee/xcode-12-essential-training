@@ -28,7 +28,8 @@ class ViewController: NSViewController {
     }
     
     func getSquare(num: Int) -> Int {
-        return num * num
+        let squareResult: Int = num * num
+        return squareResult
     }
 
     override var representedObject: Any? {
