@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         label.text = "Hello"
     }
 
-
+    @IBAction func buttonPressed(_ sender: Any) {
+        label.text = "Button Pressed"
+    }
+    
 }
 
